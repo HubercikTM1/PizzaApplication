@@ -22,5 +22,11 @@ public class PizzaEntity {
     @OneToMany(mappedBy = "pizza", orphanRemoval = true)
     private Set<SizeEntity> sizes;
 
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+
 
 }

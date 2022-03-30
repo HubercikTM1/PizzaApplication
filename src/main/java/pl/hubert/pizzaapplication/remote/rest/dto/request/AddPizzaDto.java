@@ -1,31 +1,30 @@
 package pl.hubert.pizzaapplication.remote.rest.dto.request;
+import java.util.List;
 
 public class AddPizzaDto {
 
     private String name;
-    private List<AddSizeDto> size;
+    private List<AddSizeDto> sizes;
 
     public AddPizzaDto() {
     }
 
-    public AddPizzaDto(String name, List<AddSizeDto> size) {
+    public AddPizzaDto(String name, List<AddSizeDto> sizes) {
         this.name = name;
-        this.size = size;
+        this.sizes = sizes;
     }
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public List<AddSizeDto> getSize() {
-        return size;
+    public List<AddSizeDto> getSizes() {
+        return sizes;
     }
-
-    public void setSize(List<AddSizeDto> size) {
-        this.size = size;
+    public void setSizes(List<AddSizeDto> sizes) {
+        this.sizes = sizes;
     }
 }
